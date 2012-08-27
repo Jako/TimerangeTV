@@ -1,0 +1,6 @@
+﻿Changelog for TimerangeTV.
+
+TimerangeTV 1.0.0-pl (August 27, 2012)
+====================================
+- Initial project
+- Initial changelog started
