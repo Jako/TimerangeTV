@@ -9,11 +9,12 @@ class TimerangeInputRender extends modTemplateVarInputRender {
 		$this->modx->lexicon->load('tv_widget');
 		$this->modx->lexicon->load('timerangetv:tvrenders');
 		
-		/*$test = ((strpos($value, '||')) ? true : false);
+		$times = array();
+		$test = ((strpos($value, '||')) ? true : false);
 		if($test !== false) {
-			$this->set('processedValue', array_pop(explode('||', $value)));
-			$this->set('value', array_shift(explode('||', $value)));
-		}*/
+			$times = explode('||', $value);
+		}
+		$this->setPlaceholder('times', $times);
 		
 		/* fetch only the tv lexicon */
 		$langs = $this->modx->lexicon->fetch();

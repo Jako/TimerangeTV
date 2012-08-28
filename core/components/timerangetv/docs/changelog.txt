@@ -1,5 +1,10 @@
 ﻿Changelog for TimerangeTV.
 
+TimerangeTV 1.0.1-pl (August 28, 2012)
+====================================
+- Fixed: setting values back to the fields when loading resource edit form
+
+
 TimerangeTV 1.0.0-pl (August 27, 2012)
 ====================================
 - Initial project
