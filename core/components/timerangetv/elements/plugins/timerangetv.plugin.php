@@ -4,7 +4,7 @@
  * Will create a timerange TV input type
  * 
  * @package timerangetv
- * @author Bert Oost at OostDesign.nl <bert@oostdesign.nl>
+ * @author Bert Oost at OostDesign <bert@oostdesign.com>
  */
 $trtv = $modx->getService('timerangetv','TimerangeTV',$modx->getOption('timerangetv.core_path',null,$modx->getOption('core_path').'components/timerangetv/').'model/timerangetv/',$scriptProperties);
 if (!($trtv instanceof TimerangeTV)) return '';
@@ -20,5 +20,3 @@ switch($modx->event->name) {
         $modx->event->output($trtv->config['corePath'].'elements/tv/properties/input/');
     break;
 }
-
-?>
