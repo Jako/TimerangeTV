@@ -1,22 +1,38 @@
 <?php
 /**
- * TimerangeTV
- * Will create a timerange TV input type
- * 
+ * Timerange TV Runtime Hooks
+ *
  * @package timerangetv
- * @author Bert Oost at OostDesign <bert@oostdesign.com>
+ * @subpackage plugin
+ *
+ * @event OnManagerPageBeforeRender
+ * @event OnTVInputRenderList
+ * @event OnTVInputPropertiesList
+ * @event OnDocFormRender
+ *
+ * @var modX $modx
  */
-$trtv = $modx->getService('timerangetv','TimerangeTV',$modx->getOption('timerangetv.core_path',null,$modx->getOption('core_path').'components/timerangetv/').'model/timerangetv/',$scriptProperties);
-if (!($trtv instanceof TimerangeTV)) return '';
 
-$modx->lexicon->load('timerangetv:tvrenders');
+$eventName = $modx->event->name;
 
-$corePath = $modx->getOption('timerangetv.core_path',null,$modx->getOption('core_path').'components/timerangetv/');
-switch($modx->event->name) {
+$corePath = $modx->getOption('timerangetv.core_path', null, $modx->getOption('core_path') . 'components/timerangetv/');
+/** @var TimerangeTV $timerangetv */
+$timerangetv = $modx->getService('timerangetv', 'TimerangeTV', $corePath . 'model/timerangetv/', array(
+    'core_path' => $corePath
+));
+
+switch ($eventName) {
+    case 'OnManagerPageBeforeRender':
+        $modx->controller->addLexiconTopic('timerangetv:tvrenders');
+        $timerangetv->includeScriptAssets();
+        break;
     case 'OnTVInputRenderList':
-        $modx->event->output($trtv->config['corePath'].'elements/tv/input/');
-    break;
+        $modx->event->output($corePath . 'elements/tv/input/');
+        break;
     case 'OnTVInputPropertiesList':
-        $modx->event->output($trtv->config['corePath'].'elements/tv/properties/input/');
-    break;
-}
+        $modx->event->output($corePath . 'elements/tv/input/options/');
+        break;
+    case 'OnDocFormRender':
+        $timerangetv->includeScriptAssets();
+        break;
+};

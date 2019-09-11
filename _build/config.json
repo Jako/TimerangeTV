@@ -1,0 +1,54 @@
+{
+  "name": "TimerangeTV",
+  "lowCaseName": "timerangetv",
+  "description": "Time range custom template variable",
+  "author": "Thomas Jakobi",
+  "version": "1.2.0",
+  "package": {
+    "elements": {
+      "plugins": [
+        {
+          "name": "TimerangeTV",
+          "file": "timerangetv.plugin.php",
+          "events": [
+            "OnManagerPageBeforeRender",
+            "OnTVInputRenderList",
+            "OnTVInputPropertiesList",
+            "OnDocFormRender"
+          ]
+        }
+      ]
+    },
+    "systemSettings": [
+      {
+        "key": "debug",
+        "area": "system",
+        "type": "combo-boolean",
+        "value": "0"
+      }
+    ]
+  },
+  "dependencies": [
+    {
+      "name": "php",
+      "version": ">=5.6"
+    },
+    {
+      "name": "modx",
+      "version": ">=2.6"
+    }
+  ],
+  "build": {
+    "readme": "docs/readme.md",
+    "license": "docs/license.md",
+    "changelog": "docs/changelog.md",
+    "setupOptions": {
+      "source": "setup.options.php"
+    },
+    "resolver": {
+      "after": [
+        "resolve.treehillstudio.php"
+      ]
+    }
+  }
+}

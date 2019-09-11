@@ -2,6 +2,10 @@
 
 Time range custom template variable in MODX Revolution.
 
+- Author: Bert Oost <bert@oostdesign.com>
+- Current Maintainer: Thomas Jakobi <thomas.jakobi@partout.info>
+- License: GNU GPLv2
+
 ## Features
 
 With this MODX custom template variable two depending timepicker inputs could be
@@ -15,3 +19,7 @@ MODX Package Management
 
 Install via package manager, create a TV and change the input type to 'Time
 Range (From <> To)'
+
+## GitHub Repository
+
+https://github.com/Jako/TimerangeTV

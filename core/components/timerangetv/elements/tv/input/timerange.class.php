@@ -1,35 +1,59 @@
 <?php
+/**
+ * TimerangeTV Input Render
+ *
+ * @package timerangetv
+ * @subpackage input_render
+ */
 
-class TimerangeInputRender extends modTemplateVarInputRender {
-    public function getTemplate() {
-		$corePath = $this->modx->getOption('timerangetv.core_path',null,$this->modx->getOption('core_path').'components/timerangetv/');
-        return $corePath.'templates/tv/input/timerange.tpl';
+class TimerangeInputRender extends modTemplateVarInputRender
+{
+    /**
+     * Return the template path to load
+     *
+     * @return string
+     */
+    public function getTemplate()
+    {
+        $corePath = $this->modx->getOption('timerangetv.core_path', null, $this->modx->getOption('core_path') . 'components/timerangetv/');
+        return $corePath . 'elements/tv/input/tpl/timerange.render.tpl';
     }
-    public function process($value,array $params = array()) {
-		$this->modx->lexicon->load('tv_widget');
-		$this->modx->lexicon->load('timerangetv:tvrenders');
-		
-		$times = array();
-		$test = ((strpos($value, '||')) ? true : false);
-		if($test !== false) {
-			$times = explode('||', $value);
-		}
-		$this->setPlaceholder('times', $times);
-		
-		/* fetch only the tv lexicon */
-		$langs = $this->modx->lexicon->fetch();
-		foreach($langs as $k => $v) {
-			if(strpos($k, 'timerangetv.') !== false) {
-				$k = str_replace('timerangetv.', '', $k);
-				$k = str_replace('.', '_', $k);
-			}
-			$this->setPlaceholder('lang_'.$k, $v);
-		}
-		
-		$this->setPlaceholder('params', $params);
+
+    /**
+     * Get lexicon topics
+     *
+     * @return array
+     */
+    public function getLexiconTopics()
+    {
+        return array('timerangetv:default');
+    }
+
+    /**
+     * Process Input Render
+     *
+     * @param string $value
+     * @param array $params
+     * @return void
+     */
+    public function process($value, array $params = array())
+    {
+        // set timerange value
+        $timerange = array();
+        if (strpos($value, '||')) {
+            $timerange = explode('||', $value);
+        } else {
+            $timerange[0] = $value;
+        }
+        $this->setPlaceholder('timerange', $timerange);
+
+        // add lexicon topic
+        $this->modx->controller->addLexiconTopic('timerangetv:tvrenders');
+
+        // set params
+        $params['allowBlank'] = ($params['allowBlank'] === 'false' || $params['allowBlank'] === 0 || $params['allowBlank'] === false) ? 'false' : 'true';
+        $this->setPlaceholder('params', $params);
     }
 }
 
 return 'TimerangeInputRender';
-
-?>
