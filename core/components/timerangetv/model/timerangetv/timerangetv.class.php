@@ -27,7 +27,7 @@ class TimerangeTV
      * The version
      * @var string $version
      */
-    public $version = '1.2.0';
+    public $version = '1.2.0-pl2';
 
     /**
      * The class options
@@ -119,7 +119,7 @@ class TimerangeTV
             $this->modx->controller->addJavascript($jsSourceUrl . 'timerangetv.renderer.js?v=v' . $this->version);
         } else {
             $this->modx->controller->addCss($cssUrl . 'timerangetv.min.css?v=v' . $this->version);
-//            $this->modx->controller->addJavascript($jsUrl . 'timerangetv.min.js?v=v' . $this->version);
+            $this->modx->controller->addJavascript($jsUrl . 'timerangetv.min.js?v=v' . $this->version);
         }
         $this->modx->controller->addHtml('<script type="text/javascript">TimerangeTV.config = ' . json_encode($this->options, JSON_PRETTY_PRINT) . ';</script>');
     }
