@@ -23,7 +23,7 @@ $timerangetv = $modx->getService('timerangetv', 'TimerangeTV', $corePath . 'mode
 
 switch ($eventName) {
     case 'OnManagerPageBeforeRender':
-        $modx->controller->addLexiconTopic('timerangetv:tvrenders');
+        $modx->controller->addLexiconTopic('timerangetv:default');
         $timerangetv->includeScriptAssets();
         break;
     case 'OnTVInputRenderList':
