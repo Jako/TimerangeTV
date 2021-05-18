@@ -1,10 +1,11 @@
 <?php
 /**
- * Render Lexicon Entries for TimerangeTV
+ * Default Lexicon Entries for TimerangeTV
  *
  * @package timerangetv
- * @subpackage language
+ * @subpackage lexicon
  */
+
 $_lang['timerangetv'] = "TimerangeTV";
 
 $_lang['timerange'] = "Tijdreeks (van <> tot)";

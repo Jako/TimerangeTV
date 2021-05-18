@@ -1,3 +1,5 @@
+[![Default Lexicon](https://hosted.weblate.org/widgets/modx-extras/-/modx-timerangetv-standard/svg-badge.svg)](https://hosted.weblate.org/projects/modx-extras/modx-timerangetv-standard/)
+
 # TimerangeTV
 
 Time range custom template variable in MODX Revolution.
@@ -15,3 +17,11 @@ MODX Package Management
 
 Install via package manager, create a TV and change the input type to 'Time
 Range (From <> To)'
+
+## License
+
+The project is licensed under the [GPLv2 license](https://github.com/Jako/TimerangeTV/blob/master/core/components/timerangetv/docs/license.md).
+
+## Translations
+
+Translations of the package can be made for the [Default Lexicon](https://hosted.weblate.org/projects/modx-extras/modx-timerangetv-standard/) and the [System Setting Lexicon](https://hosted.weblate.org/projects/modx-extras/modx-timerangetv-system-settings/)

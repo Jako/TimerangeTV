@@ -5,7 +5,7 @@
  * @package timerangetv
  * @subpackage input properties
  *
- * @var modX $modx
+ * @var \modX $modx
  */
 
 $corePath = $modx->getOption('timerangetv.core_path', null, $modx->getOption('core_path') . 'components/timerangetv/');

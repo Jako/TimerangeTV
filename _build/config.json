@@ -3,7 +3,7 @@
   "lowCaseName": "timerangetv",
   "description": "Time range custom template variable",
   "author": "Thomas Jakobi",
-  "version": "1.2.0-pl2",
+  "version": "1.2.1",
   "package": {
     "elements": {
       "plugins": [

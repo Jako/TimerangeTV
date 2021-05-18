@@ -47,9 +47,6 @@ class TimerangeInputRender extends modTemplateVarInputRender
         }
         $this->setPlaceholder('timerange', $timerange);
 
-        // add lexicon topic
-        $this->modx->controller->addLexiconTopic('timerangetv:tvrenders');
-
         // set params
         $params['allowBlank'] = ($params['allowBlank'] === 'false' || $params['allowBlank'] === 0 || $params['allowBlank'] === false) ? 'false' : 'true';
         $this->setPlaceholder('params', $params);

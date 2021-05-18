@@ -3,7 +3,7 @@
  * Main Class for Timerange TV
  *
  * Copyright 2012-2019 by Bert Oost <bert@oostdesign.nl>
- * Copyright 2019 by Thomas Jakobi <thomas.jakobi@partout.info>
+ * Copyright 2019-2021 by Thomas Jakobi <thomas.jakobi@partout.info>
  *
  * @package timerangetv
  * @subpackage classfile
@@ -27,7 +27,7 @@ class TimerangeTV
      * The version
      * @var string $version
      */
-    public $version = '1.2.0-pl2';
+    public $version = '1.2.1';
 
     /**
      * The class options
@@ -71,7 +71,7 @@ class TimerangeTV
             'connectorUrl' => $assetsUrl . 'connector.php'
         ), $options);
 
-        // set default options
+        // Add default options
         $this->options = array_merge($this->options, array());
 
         $this->modx->lexicon->load($this->namespace . ':default');
@@ -121,6 +121,6 @@ class TimerangeTV
             $this->modx->controller->addCss($cssUrl . 'timerangetv.min.css?v=v' . $this->version);
             $this->modx->controller->addJavascript($jsUrl . 'timerangetv.min.js?v=v' . $this->version);
         }
-        $this->modx->controller->addHtml('<script type="text/javascript">TimerangeTV.config = ' . json_encode($this->options, JSON_PRETTY_PRINT) . ';</script>');
+        $this->modx->controller->addHtml('<script type="text/javascript">TimerangeTV.config = ' . json_encode($this->options, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) . ';</script>');
     }
 }
