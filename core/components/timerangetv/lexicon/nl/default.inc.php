@@ -5,7 +5,6 @@
  * @package timerangetv
  * @subpackage lexicon
  */
-
 $_lang['timerangetv'] = "TimerangeTV";
 $_lang['timerange'] = "Tijdreeks (van <> tot)";
 $_lang['timerangetv.from'] = "Van tijd";
