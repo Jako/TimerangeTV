@@ -5,14 +5,10 @@
  * @package timerangetv
  * @subpackage lexicon
  */
-
 $_lang['timerangetv'] = "TimerangeTV";
-
 $_lang['timerange'] = "Zeitraum (von – bis)";
-
 $_lang['timerangetv.from'] = "Von";
 $_lang['timerangetv.to'] = "Bis";
-
 $_lang['timerangetv.max_value'] = 'Maximalwert';
 $_lang['timerangetv.max_value_desc'] = 'Der Maximalwert der Zeiteingabe. Der Standardwert ist 23:59.';
 $_lang['timerangetv.min_value'] = 'Minimalwert';
