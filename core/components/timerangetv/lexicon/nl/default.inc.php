@@ -14,6 +14,6 @@ $_lang['timerangetv.max_value_desc'] = 'De maximale waarde van de tijdinvoer. St
 $_lang['timerangetv.min_value'] = 'Minimale waarde';
 $_lang['timerangetv.min_value_desc'] = 'De minimumwaarde van de tijdinvoer. Standaard ingesteld op 00:00.';
 $_lang['timerangetv.time_format'] = "Tijdsformaat";
-$_lang['timerangetv.time_format_desc'] = "Het formaat moet voldoen aan <a href=\"http://docs.sencha.com/ext-js/3-4/#!/api/Date-static-method-parseDate\" target=\"_blank\">Date.parseDate</a> (Standaard: Manager Datumformaat).";
+$_lang['timerangetv.time_format_desc'] = "Het formaat moet voldoen aan <a href=\"https://docs.sencha.com/extjs/3.4.0/#!/api/Date\" target=\"_blank\">Date.parseDate</a> (Standaard: Manager Tijd Formaat).";
 $_lang['timerangetv.time_increment'] = "Tijdsinterval";
 $_lang['timerangetv.time_increment_desc'] = "De interval in minuten voor de tijdlijst. Standaard ingesteld op 60.";
