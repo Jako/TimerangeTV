@@ -7,4 +7,4 @@
  */
 
 $_lang['setting_timerangetv.debug'] = 'Debug';
-$_lang['setting_timerangetv.debug_desc'] = 'Log debug informations in MODX error log.';
+$_lang['setting_timerangetv.debug_desc'] = 'Log debug information in the MODX error log.';
