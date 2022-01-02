@@ -1,7 +1,7 @@
 {
   "name": "timerangetv",
   "description": "Time range custom template vancuriable",
-  "author": "Thomas Jakobi <thomas.jakobi@partout.info>",
+  "author": "Thomas Jakobi <office@treehillstudio.com>",
   "private": true,
   "devDependencies": {
     "@lodder/grunt-postcss": "^3.0.1",

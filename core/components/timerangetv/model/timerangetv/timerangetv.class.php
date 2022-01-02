@@ -3,7 +3,7 @@
  * Main Class for Timerange TV
  *
  * Copyright 2012-2019 by Bert Oost <bert@oostdesign.nl>
- * Copyright 2019-2021 by Thomas Jakobi <thomas.jakobi@partout.info>
+ * Copyright 2019-2021 by Thomas Jakobi <office@treehillstudio.com>
  *
  * @package timerangetv
  * @subpackage classfile

@@ -3,7 +3,7 @@
 Time range custom template variable in MODX Revolution.
 
 - Author: Bert Oost <bert@oostdesign.com>
-- Current Maintainer: Thomas Jakobi <thomas.jakobi@partout.info>
+- Current Maintainer: Thomas Jakobi <office@treehillstudio.com>
 - License: GNU GPLv2
 
 ## Features
