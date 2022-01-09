@@ -1,0 +1,30 @@
+{
+  "name": "treehillstudio/timerangetv",
+  "description": "Time Range Custom Template Variable",
+  "authors": [
+    {
+      "name": "Bert Oost",
+      "email": "bert@oostdesign.com",
+      "homepage": "https://www.oostdesign.com/"
+    },
+    {
+      "name": "Thomas Jakobi",
+      "email": "office@treehillstudio.com",
+      "homepage": "https://treehillstudio.com"
+    }
+  ],
+  "license": "GPL-2.0-or-later",
+  "config": {
+    "platform": {
+      "php": "7.2.5"
+    }
+  },
+  "require": {
+    "php": ">=7.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "TreehillStudio\\TimerangeTV\\": "src/"
+    }
+  }
+}

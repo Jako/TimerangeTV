@@ -6,7 +6,7 @@ used to insert a time range in a MODX resource.
 ### Requirements
 
 * MODX Revolution 2.6+
-* PHP v5.6+
+* PHP 7.2+
 
 ### Features
 

@@ -14,8 +14,6 @@ Ext.apply(Ext.form.VTypes, {
             }
         }
         if (end) {
-            // var test1 = time.getTime();
-            // var test2 = end.minValue.getTime();
             if (!end.minValue || (formatted !== end.minValue.format('Gi'))) {
                 end.setMinValue(time);
                 end.validate();
@@ -111,8 +109,6 @@ Ext.extend(TimerangeTV.combo.TimerangeTV, MODx.Panel, {
     },
     setTVValue: function (values) {
         var oldFromToTime = this.getTVValue();
-        var fromTime = '';
-        var toTime = '';
         var fromToTime = '';
         if (values.from) {
             fromToTime = values.from + '||';
@@ -126,8 +122,7 @@ Ext.extend(TimerangeTV.combo.TimerangeTV, MODx.Panel, {
         }
     },
     getTVValue: function () {
-        var fromToTime = Ext.get('tv' + this.config.tvId).getValue();
-        return fromToTime;
+        return Ext.get('tv' + this.config.tvId).getValue();
     }
 });
 Ext.reg('timerangetv-combo-timerangetv', TimerangeTV.combo.TimerangeTV);

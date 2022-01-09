@@ -26,7 +26,7 @@ class TimerangeInputRender extends modTemplateVarInputRender
      */
     public function getLexiconTopics()
     {
-        return array('timerangetv:default');
+        return ['timerangetv:default'];
     }
 
     /**
@@ -36,10 +36,10 @@ class TimerangeInputRender extends modTemplateVarInputRender
      * @param array $params
      * @return void
      */
-    public function process($value, array $params = array())
+    public function process($value, array $params = [])
     {
         // set timerange value
-        $timerange = array();
+        $timerange = [];
         if (strpos($value, '||')) {
             $timerange = explode('||', $value);
         } else {

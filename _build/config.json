@@ -1,9 +1,9 @@
 {
   "name": "TimerangeTV",
   "lowCaseName": "timerangetv",
-  "description": "Time range custom template variable",
+  "description": "Time Range Custom Template Variable",
   "author": "Thomas Jakobi",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "package": {
     "elements": {
       "plugins": [
@@ -31,7 +31,7 @@
   "dependencies": [
     {
       "name": "php",
-      "version": ">=5.6"
+      "version": ">=7.2"
     },
     {
       "name": "modx",

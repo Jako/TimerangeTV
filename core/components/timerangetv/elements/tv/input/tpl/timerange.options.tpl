@@ -115,9 +115,9 @@
             listeners: {
                 afterrender: function (component) {
                     component.getEl().select('img').on('click', function () {
-                        var msg = '<span style="display: inline-block; text-align: center">© 2012-2019 by <a href="https://oostdesign.com/" target="_blank">OostDesign</a><br>' +
+                        var msg = '<span style="display: inline-block; text-align: center">&copy; 2012-2019 by <a href="https://oostdesign.com/" target="_blank">OostDesign</a><br>' +
                             '<img src="' + TimerangeTV.config.assetsUrl + 'img/treehill-studio.png" srcset="' + TimerangeTV.config.assetsUrl + 'img/treehill-studio@2x.png 2x" alt="Treehill Studio" style="margin-top: 10px"><br>' +
-                            '© 2019-2021 by <a href="https://treehillstudio.com" target="_blank">treehillstudio.com</a></span>';
+                            '&copy; 2019-2022 by <a href="https://treehillstudio.com" target="_blank">treehillstudio.com</a></span>';
                         Ext.Msg.show({
                             title: _('timerangetv') + ' ' + TimerangeTV.config.version,
                             msg: msg,
@@ -129,7 +129,6 @@
                 }
             }
         }],
-        renderTo: 'tv-input-properties-form{/literal}{$tv}{literal}'
     });
     // ]]>
 </script>
