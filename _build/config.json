@@ -9,6 +9,7 @@
       "plugins": [
         {
           "name": "TimerangeTV",
+          "description": "TimerangeTV runtime hooks - registers custom TV input types and includes javascripts on document edit pages",
           "file": "timerangetv.plugin.php",
           "events": [
             "OnManagerPageBeforeRender",

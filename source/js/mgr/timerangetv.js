@@ -9,4 +9,3 @@ Ext.extend(timerangetv, Ext.Component, {
 Ext.reg('timerangetv', timerangetv);
 
 TimerangeTV = new timerangetv();
-
