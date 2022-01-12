@@ -32,7 +32,7 @@ abstract class Plugin
     public function __construct($modx, &$scriptProperties)
     {
         $this->scriptProperties = &$scriptProperties;
-        $this->modx = &$modx;
+        $this->modx =& $modx;
         $corePath = $this->modx->getOption('timerangetv.core_path', null, $this->modx->getOption('core_path') . 'components/timerangetv/');
         $this->timerangetv = $this->modx->getService('timerangetv', 'TimerangeTV', $corePath . 'model/timerangetv/', [
             'core_path' => $corePath
