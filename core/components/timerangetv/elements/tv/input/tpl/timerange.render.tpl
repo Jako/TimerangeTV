@@ -1,7 +1,7 @@
 <input id="tv{$tv->id}" type="hidden" class="textfield"
        value="{$tv->value}" name="tv{$tv->id}"
        onblur="MODx.fireResourceFormChange();"/>
-<div id="modx-timerange-tv{$tv->id}"></div>
+<div id="modx-timerange-tv{$tv->id}" class="timerangetv-panel-input"></div>
 
 <script type="text/javascript">
     // <![CDATA[{literal}

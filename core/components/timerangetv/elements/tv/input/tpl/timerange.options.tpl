@@ -6,7 +6,7 @@
         {/foreach}{literal}
     };
     var oc = {
-        'change': {
+        change: {
             fn: function () {
                 Ext.getCmp('modx-panel-tv').markDirty();
             }, scope: this
@@ -16,6 +16,7 @@
         xtype: 'panel',
         layout: 'form',
         applyTo: 'modx-input-props',
+        cls: 'daterangetv-props',
         border: false,
         labelAlign: 'top',
         listeners: {
@@ -23,7 +24,10 @@
                 Ext.getCmp('modx-panel-tv-input-properties').addListener('resize', function () {
                     component.setWidth(Ext.getCmp('modx-input-props').getWidth()).doLayout();
                 });
-            }
+                Ext.getCmp('modx-tv-tabs').addListener('tabchange', function () {
+                    component.setWidth(Ext.getCmp('modx-input-props').getWidth()).doLayout();
+                });
+            },
         },
         items: [{
             xtype: 'combo-boolean',
@@ -128,8 +132,9 @@
                     });
                 }
             }
-        }],
+        }]
     });
+    MODx.helpUrl = 'https://jako.github.io/TimerangeTV/usage/';
     // ]]>
 </script>
 {/literal}

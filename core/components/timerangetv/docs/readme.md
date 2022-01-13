@@ -20,6 +20,10 @@ MODX Package Management
 Install via package manager, create a TV and change the input type to 'Time
 Range (From <> To)'
 
+## Documentation
+
+For more information please read the [documentation](https://jako.github.io/TimerangeTV/).
+
 ## GitHub Repository
 
 https://github.com/Jako/TimerangeTV
