@@ -3,7 +3,7 @@
   "lowCaseName": "timerangetv",
   "description": "Time Range Custom Template Variable",
   "author": "Thomas Jakobi",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "package": {
     "elements": {
       "plugins": [
@@ -13,9 +13,8 @@
           "file": "timerangetv.plugin.php",
           "events": [
             "OnManagerPageBeforeRender",
-            "OnTVInputRenderList",
             "OnTVInputPropertiesList",
-            "OnDocFormRender"
+            "OnTVInputRenderList"
           ]
         }
       ]
@@ -48,6 +47,7 @@
     },
     "resolver": {
       "after": [
+        "resolve.cleanup.php",
         "resolve.treehillstudio.php"
       ]
     }
