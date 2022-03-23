@@ -40,7 +40,7 @@ class TimerangeTV
      * The version
      * @var string $version
      */
-    public $version = '1.2.3';
+    public $version = '1.2.4';
 
     /**
      * The class options
