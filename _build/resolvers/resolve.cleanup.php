@@ -2,7 +2,7 @@
 /**
  * Resolve cleanup
  *
- * @package superboxselect
+ * @package timerangetv
  * @subpackage build
  *
  * @var array $options
