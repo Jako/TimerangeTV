@@ -1,4 +1,4 @@
-[![Default Lexicon](https://hosted.weblate.org/widgets/modx-extras/-/modx-timerangetv-standard/svg-badge.svg)](https://hosted.weblate.org/projects/modx-extras/modx-timerangetv-standard/)
+[![Default Lexicon](https://hosted.weblate.org/widgets/modx-extras/timerangetv/standard/svg-badge.svg)](https://hosted.weblate.org/projects/modx-extras/timerangetv/standard/)
 
 # TimerangeTV
 
@@ -24,4 +24,4 @@ The project is licensed under the [GPLv2 license](https://github.com/Jako/Timera
 
 ## Translations
 
-Translations of the package can be made for the [Default Lexicon](https://hosted.weblate.org/projects/modx-extras/modx-timerangetv-standard/) and the [System Setting Lexicon](https://hosted.weblate.org/projects/modx-extras/modx-timerangetv-system-settings/)
+Translations of the package can be made for the [Default Lexicon](https://hosted.weblate.org/projects/modx-extras/timerangetv/standard/) and the [System Setting Lexicon](https://hosted.weblate.org/projects/modx-extras/timerangetv/system-settings/)
