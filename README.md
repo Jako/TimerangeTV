@@ -1,4 +1,4 @@
-[![Default Lexicon](https://hosted.weblate.org/widgets/modx-extras/timerangetv/standard/svg-badge.svg)](https://hosted.weblate.org/projects/modx-extras/timerangetv/standard/)
+[![Default Lexicon](https://hosted.weblate.org/widget/modx-extras/timerangetv/standard/svg-badge.svg)](https://hosted.weblate.org/projects/modx-extras/timerangetv/standard/)
 
 # TimerangeTV
 
