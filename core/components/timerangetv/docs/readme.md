@@ -8,7 +8,7 @@ Time range custom template variable in MODX Revolution.
 
 ## Features
 
-With this MODX custom template variable two depending timepicker inputs could be
+With this MODX custom template variable two dependent timepicker inputs could be
 used to insert a time range in a MODX resource.
 
 ## Installation
