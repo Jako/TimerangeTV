@@ -37,7 +37,7 @@ TimerangeTV.combo.TimerangeTV = function (config) {
         width: 400,
         items: [{
             xtype: 'panel',
-            columnWidth: .5,
+            columnWidth: 0.5,
             layout: 'form',
             labelAlign: 'top',
             border: false,
@@ -67,7 +67,7 @@ TimerangeTV.combo.TimerangeTV = function (config) {
             ]
         }, {
             xtype: 'panel',
-            columnWidth: .5,
+            columnWidth: 0.5,
             layout: 'form',
             labelAlign: 'top',
             border: false,
