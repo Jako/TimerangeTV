@@ -1,6 +1,7 @@
 {
   "name": "treehillstudio/timerangetv",
   "description": "Time Range Custom Template Variable",
+  "version": "1.2.5",
   "authors": [
     {
       "name": "Bert Oost",
